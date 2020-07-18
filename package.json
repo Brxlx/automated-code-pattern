@@ -8,7 +8,7 @@
     }
   },
   "lint-staged": {
-    "*.ts?(x)": [
+    "*.{ts,tsx}": [
       "eslint -c .eslintrc.json --fix",
       "yarn test -- findRelatedTests"
     ]

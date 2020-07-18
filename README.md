@@ -68,4 +68,15 @@
 
         `"react/jsx-filename-extension": [1, { "extensions":[".js", ".jsx", ".ts", ".tsx"] }]`
 
+- Adicionar mais opções no arquivo, como verificações de testes, por exemplo:
+
+    ```json
+        "lint-staged": {
+            "*.ts?(x)": [
+            "eslint -c .eslintrc.json --fix",
+            "yarn test -- findRelatedTests"
+            ]
+        }
+    ```
+
 
