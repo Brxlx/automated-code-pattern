@@ -37,3 +37,33 @@
 > Husky
 
  `yarn add husky -D`
+
+ - No `package.json`:
+
+    ```json
+    "husky": {
+    "hooks": {
+      "pre-commit": "echo 'teste'"
+    }
+  
+    ```
+
+> lint-staged
+
+ `yarn add lint-staged -D`
+
+ - No `package.json`:
+
+    ```json
+    "lint-staged": {
+    "src/**/*.ts": [ // Todos arquivos ts dentro de src
+      "eslint --fix"
+    ]
+    }
+    ```
+
+- Instalar eslint -D para o funcionamento do linting.
+    - Se faltar, instalar `yarn add -D @typescript-eslint/parser`
+    - Adicionar regra pra arquivos `.jsx`, `.tsx`:
+
+        `"react/jsx-filename-extension": [1, { "extensions":[".js", ".jsx", ".ts", ".tsx"] }]`
