@@ -8,11 +8,9 @@
     }
   },
   "lint-staged": {
-    "src/**/*.ts": [
-      "eslint --fix"
-    ],
-    "src/**/*.tsx": [
-      "eslint --fix"
+    "*.ts?(x)": [
+      "eslint -c .eslintrc.json --fix",
+      "yarn test -- findRelatedTests"
     ]
   },
   "dependencies": {
