@@ -80,3 +80,28 @@
     ```
 
 
+> Rules
+
+- Em caso de erro do módulo React:
+
+    `yarn add -D @types/react`
+
+- Em caso de erro de extensão de arquivos `.ts` ou `.tsx`, no arquivo `.eslintrc.json`:
+
+    ```json
+    "rules": {
+        "react/jsx-filename-extension": [1, { "extensions":[".js", ".jsx", ".ts", ".tsx"] }],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+         ]
+    }
+    ```
+
+
