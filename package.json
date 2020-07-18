@@ -10,6 +10,9 @@
   "lint-staged": {
     "src/**/*.ts": [
       "eslint --fix"
+    ],
+    "src/**/*.tsx": [
+      "eslint --fix"
     ]
   },
   "dependencies": {
