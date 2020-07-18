@@ -21,6 +21,9 @@
         "@typescript-eslint"
     ],
     "rules": {
+<<<<<<< HEAD
         "react/jsx-filename-extension": [1, { "extensions":[".js", ".jsx", ".ts", ".tsx"] }]
+=======
+>>>>>>> 614822e73bfc696096886761bc97f4ca173fa651
     }
 }
