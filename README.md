@@ -33,3 +33,7 @@
 - Para desabilitar warnings do git:
 
     `git config [--global] core.safecrlf false`
+
+> Husky
+
+ `yarn add husky -D`
