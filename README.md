@@ -188,3 +188,5 @@
             }
         }
     ```
+
+    - Executar comando `git commit` e `ENTER` para execução do _cli_.
