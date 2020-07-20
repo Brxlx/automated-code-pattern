@@ -120,3 +120,37 @@
     ]
   }
     ```
+
+> Commit lint
+
+- Adicionar biblioteca:
+
+    `yarn add @commitlint/cli @commitlint/config-conventional -D`
+
+- Criar arquivo `commitlint.config.js` ou `commitlintrc.js` na raiz do projeto.
+
+    - Dentro do arquivo, colocar:
+
+        ```javascript
+        module.exports = {extends: ['@commitlint/config-conventional']}
+        ```
+
+- Adicionar o _commitlint_ aos _hooks_ do husky:
+
+    ```json
+        "husky": {
+            "hooks": {
+            "pre-commit": "lint-staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    }
+    ```
+
+- Seguir o padrão de _commit_: 
+
+    ```
+    type(scope?): subject
+    body?
+    footer?
+
+    ```
