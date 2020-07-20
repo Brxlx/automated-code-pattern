@@ -1,5 +1,7 @@
 # Setup de projeto para automatização de padrões de código com _Husky_ e _lint-staged_
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 > Criando app _React_ com template typescript
 
 - Instalar localmente:
@@ -163,4 +165,26 @@
 
         - Arquivo de  configuração do _conventional_: `https://github.com/conventional-changelog/commitlint/blob/master/@commitlint/config-conventional/index.js`
 
+> Commitizen
 
+- Adicionar biblioteca:
+
+    `yarn add commitizen -D`
+
+- Inicializar _commitizen_ no projeto:
+
+    ` `npm` commitizen init cz-conventional-changelog --save-dev --save-exact`
+
+    ou
+
+    ` `yarn` commitizen init cz-conventional-changelog --yarn --dev --exact`
+
+- Adicionar _hook_ para execução ao chamar `commit` no `git`:
+
+    ```json
+        "husky": {
+            "hooks": {
+                "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+            }
+        }
+    ```
