@@ -105,7 +105,7 @@
     ```
 
 > Cross ENV
-- Adicionar dependência `cross-env` para funcionamento em sistemas UNIX e Windows:
+- Adicionar dependência `cross-env` para funcionamento de testes em sistemas UNIX e Windows:
 
     `yarn add cross-env -D`
 
