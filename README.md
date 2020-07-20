@@ -154,3 +154,13 @@
     footer?
 
     ```
+
+- Editando e personalizando padrões:
+
+    - Modificar arquivo `commitlint.config.js` ou `commitlintrc.js` com chaves e valores configuráveis:
+
+        - Documentação das regras: `https://github.com/conventional-changelog/commitlint/blob/master/docs/reference-rules.md`
+
+        - Arquivo de  configuração do _conventional_: `https://github.com/conventional-changelog/commitlint/blob/master/@commitlint/config-conventional/index.js`
+
+
