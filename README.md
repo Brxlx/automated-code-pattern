@@ -104,4 +104,19 @@
     }
     ```
 
-> 
+> Cross ENV
+- Adicionar dependência `cross-env` para funcionamento em sistemas UNIX e Windows:
+
+    `yarn add cross-env -D`
+
+- No arquivo `package.json`, adicionar:
+
+    ```json
+    "lint-staged": {
+    "*.ts?(x)": [
+      "eslint --fix",
+      "cross-env CI=true yarn test --bail --findRelatedTests",
+      "git add"
+    ]
+  }
+    ```
