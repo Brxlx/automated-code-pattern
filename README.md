@@ -190,3 +190,25 @@
     ```
 
     - Executar comando `git commit` e `ENTER` para execução do _cli_.
+
+> _Custom_ configs para __commits
+
+- Criar arquivo `commitlint.config.js` na raiz para personalizar o _commitlint_:
+
+    ```javascript
+        module.exports = {
+        parserPreset: 'conventional-changelog-conventionalcommits',
+        rules: {
+            // ...configurações
+        }
+    };
+    ```
+
+- Criar arquivo `changelog.config.js` para personalizar o _commitizen_:
+
+    ```javascript
+    module.exports = {
+        // ...configurações
+    };
+
+    ```
